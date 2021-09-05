@@ -1,0 +1,49 @@
+:root {
+  --color-primary: #ffffff;
+  --color-secondary: #ff0000;
+  --color-ligray: #fafafa;
+  --color-medgray: #bfcbd4;
+  --color-dagray: #111111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+body {
+  font-family: "Cardo", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+input {
+  border: 1px solid #999;
+  border-right: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Cardo";
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
