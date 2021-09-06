@@ -14,19 +14,19 @@ import {
   CardAction,
   CardButton,
 } from "./Home";
-import RushShoes from "../asset/img/shoes/eagle rush.jpg";
-import MagnumShoes from "../asset/img/shoes/Magnum2.jpg";
-import FighterShoes from "../asset/img/shoes/fighter.jpg";
-import EternalShoes from "../asset/img/shoes/eagle eternal.jpg";
+import HoodieImg from "../asset/img/apparel/sportwearhoodie.jpg";
+import JacketImg from "../asset/img/apparel/sportwearjacket.jpg";
+import PantsImg from "../asset/img/apparel/sportwearpants.jpg";
+import ShirtImg from "../asset/img/apparel/sportwearshirt.jpg";
 
-function Shoes() {
+function Apparel() {
   return (
     <Main>
       <MainTop />
       <Section>
         <Article>
           <CardImageWrapper>
-            <CardImage src={RushShoes} alt="rush-shoes" />
+            <CardImage src={HoodieImg} alt="rush-shoes" />
           </CardImageWrapper>
           <CardBody>
             <CardTitle>Rush Eagle Shoes</CardTitle>
@@ -42,7 +42,7 @@ function Shoes() {
 
         <Article>
           <CardImageWrapper>
-            <CardImage src={MagnumShoes} alt="rush-shoes" />
+            <CardImage src={JacketImg} alt="rush-shoes" />
           </CardImageWrapper>
           <CardBody>
             <CardTitle>Magnum Eagle Shoes</CardTitle>
@@ -58,7 +58,7 @@ function Shoes() {
 
         <Article>
           <CardImageWrapper>
-            <CardImage src={FighterShoes} alt="rush-shoes" />
+            <CardImage src={PantsImg} alt="rush-shoes" />
           </CardImageWrapper>
           <CardBody>
             <CardTitle>Fighter Eagle Shoes</CardTitle>
@@ -74,7 +74,7 @@ function Shoes() {
 
         <Article>
           <CardImageWrapper>
-            <CardImage src={EternalShoes} alt="rush-shoes" />
+            <CardImage src={ShirtImg} alt="rush-shoes" />
           </CardImageWrapper>
           <CardBody>
             <CardTitle>Eternal Eagle Shoes</CardTitle>
@@ -92,4 +92,4 @@ function Shoes() {
   );
 }
 
-export default Shoes;
+export default Apparel;

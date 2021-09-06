@@ -5,10 +5,14 @@ import shoesIcon from "../asset/icon/sneakers.svg";
 import backpackIcon from "../asset/icon/backpack.svg";
 import apparelIcon from "../asset/icon/clothes.svg";
 import sandalIcon from "../asset/icon/sandal.svg";
+import newIcon from "../asset/icon/new.svg";
 
 const SidebarContainer = styled.nav`
+  z-index: 3;
   height: 100%;
+  min-height: 100vh;
   width: 75px;
+  padding: 75px 0 0 0;
   background: var(--color-primary);
   display: flex;
   flex-direction: column;
@@ -65,10 +69,10 @@ function Sidebar() {
         <li>
           <A to="/shoes">
             <SideIcon
-              transform="rotate(25deg)"
               src={shoesIcon}
+              style={{ transform: "rotate(25deg)" }}
               alt="shoes-icon"
-            />{" "}
+            />
             Shoes
           </A>
         </li>
@@ -85,16 +89,16 @@ function Sidebar() {
         <li>
           <A to="/sandal">
             <SideIcon
-              transform="rotate(25deg)"
               src={sandalIcon}
+              style={{ transform: "rotate(25deg)" }}
               alt="shoes-icon"
-            />{" "}
+            />
             Sandals
           </A>
         </li>
         <li>
           <A to="/newarival">
-            <SideIcon src={shoesIcon} alt="shoes-icon" /> New Arival
+            <SideIcon src={newIcon} alt="shoes-icon" /> New Arival
           </A>
         </li>
       </ul>

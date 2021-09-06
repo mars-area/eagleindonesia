@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import styled from "styled-components";
 import Topbar from "./components/topbar";
 import Sidebar from "./components/sidebar";
 import Home from "./pages/Home";
 import Shoes from "./pages/Shoes";
-import styled from "styled-components";
+import Apparel from "./pages/Apparel";
 
 const Mainpage = styled.div`
   display: flex;
@@ -12,7 +13,8 @@ const Mainpage = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 `;
 
 function Router() {
@@ -24,6 +26,7 @@ function Router() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/shoes" component={Shoes} />
+          <Route exact path="/apparel" component={Apparel} />
         </Switch>
       </Mainpage>
     </BrowserRouter>

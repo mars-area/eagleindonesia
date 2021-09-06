@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import basketImg from "../asset/icon/basket.svg";
+import cartImg from "../asset/icon/cart.svg";
 import profileImg from "../asset/icon/user.svg";
 import searchImg from "../asset/icon/search.svg";
 
 const TopbarContainer = styled.div`
+  z-index: 10;
   display: flex;
   justify-content: center;
+  position: fixed;
   width: 100%;
   background-color: var(--color-primary);
   height: 75px;
@@ -69,7 +71,7 @@ const SearchIcon = styled.button`
   opacity: 0.25;
 `;
 
-const Basket = styled.div`
+const Cart = styled.div`
   padding: 0.5rem;
   border-radius: 50%;
   height: 50px;
@@ -102,14 +104,9 @@ function Topbar() {
               <img height="30px" src={searchImg} alt="icon-search" />
             </SearchIcon>
           </SearchForm>
-          <Basket>
-            <img
-              height="30px"
-              opacity="0.6"
-              src={basketImg}
-              alt="icon-basket"
-            />
-          </Basket>
+          <Cart>
+            <img height="30px" opacity="0.6" src={cartImg} alt="icon-cart" />
+          </Cart>
           <Profile>
             <img
               height="30px"
