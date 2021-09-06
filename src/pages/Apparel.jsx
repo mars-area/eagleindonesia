@@ -17,7 +17,7 @@ import {
 import HoodieImg from "../asset/img/apparel/sportwearhoodie.jpg";
 import JacketImg from "../asset/img/apparel/sportwearjacket.jpg";
 import PantsImg from "../asset/img/apparel/sportwearpants.jpg";
-import ShirtImg from "../asset/img/apparel/sportwearshirt.jpg";
+import ShirtImg from "../asset/img/apparel/sportweartshirt.jpg";
 
 function Apparel() {
   return (
